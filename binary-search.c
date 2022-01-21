@@ -1,20 +1,23 @@
 /* Author : Siddharth Shankar */
-#include<stdio.h>
+#include<stdio.h>		/* Inclusion of required .h files */
 #include<stdlib.h>
 #include<string.h>
 
 int main()
 {
-	//int numbers[10] = {0},toFind = 0;
+	// if binary search is to be done on integers
+	// int numbers[10] = {0},toFind = 0;
 	FILE *fp;
 	char ch,i,start,end,mid = 0,len;
 	char strings[10][15] = {"AALOK","BHUVAN","DISHA","HARPAL","ISHITA","MAYURI","PARTH","PARUL","RICHA","TANYA"},toFind[15];
-	if(fp == NULL)
+	if(fp == NULL)		/* If reading of file is required else comment the lines from if(fp == NULL) to ch = fgetc(fp) } */
 		printf("Cannot open file.\n");
 	else
 	{
 		ch = fgetc(fp);
 	}
+	/* If we are taking the strings from stdin */
+	
 	/*
 	printf("Enter 10 strings in sorted order : ");
 	i = 0;
@@ -25,7 +28,8 @@ int main()
 		i++;
 	}
 	*/
-	printf("\n10 strings in the list are : \n");
+	
+	printf("\n10 strings in the array are : \n");		/* Printing default strings in the array */
 	i = 0;
 	while(i < 10)
 	{
