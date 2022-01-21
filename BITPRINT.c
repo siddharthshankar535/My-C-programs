@@ -1,3 +1,4 @@
+/* This program can be used to print the binary representation of any variable which can be int, float, double, char */
 #include<stdio.h>
 #define BITPRINT(a) bit_print((char *)&a,(char)sizeof(a))
 
