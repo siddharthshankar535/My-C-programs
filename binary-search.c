@@ -1,3 +1,4 @@
+/* Author : Siddharth Shankar */
 #include<stdio.h>		/* Inclusion of required .h files */
 #include<stdlib.h>
 #include<string.h>
