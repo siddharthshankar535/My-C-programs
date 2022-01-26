@@ -34,8 +34,9 @@ int main() {
 
 	last = 0;
 	while(last < MAX) {
-	
-		printf("%c",hexa[last]);
+
+		if(hexa[0] != '0')	
+			printf("%c",hexa[last]);
 		last++;
 	}
 	printf("\n");
