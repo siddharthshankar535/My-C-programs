@@ -1,8 +1,12 @@
+/*
+*	We require to include the SquareRoot.c file in any C program we use it.
+*	For including the file type everything written inside the <> symbols in your file where we intend to use SquareRoot.c program
+*	<#include "<pathname>/SquareRoot.c">
+*	Here, pathname is the location on the drive/computer where you store the SquareRoot.c file
+*/
+
 #include<stdio.h>
 #define SQROOT(a) square_root(a)
-
-//#include "/home/cerberus/Desktop/Siddharth/Programming/C/SquareRoot.c"
-//The above path should be included to the file where square root is to be used
 
 float square_root(float num)
 {
@@ -23,5 +27,4 @@ float square_root(float num)
 		}while(diff>0.001);
 	}
 	return(guess2);
-	//printf("%f",guess2);
 }
