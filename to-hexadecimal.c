@@ -32,11 +32,13 @@ int main() {
 	printf("Hexadecimal of %d is ",number);
 	//printf("%s\n",hexa);
 
-	last = 0;
+	if(hexa[0] != 48)	
+		printf("%c",hexa[0]);
+
+	last = 1;
 	while(last < MAX) {
 
-		if(hexa[0] != '0')	
-			printf("%c",hexa[last]);
+		printf("%c",hexa[last]);
 		last++;
 	}
 	printf("\n");
